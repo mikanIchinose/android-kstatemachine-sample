@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="qiita">
+    <output-path>$PROJECT_DIR$/qiita/build/libs</output-path>
+    <root id="archive" name="qiita.jar">
+      <element id="module-output" name="kstatemachineSample.qiita.androidMain" />
+    </root>
+  </artifact>
+</component>

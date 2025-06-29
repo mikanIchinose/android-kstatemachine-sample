@@ -20,6 +20,10 @@ gradlePlugin {
             id = "sample.convention.android.library"
             implementationClass = "io.github.mikan.sample.convention.AndroidLibraryPlugin"
         }
+        register("androidCompose") {
+            id = "sample.convention.android.compose"
+            implementationClass = "io.github.mikan.sample.convention.AndroidComposePlugin"
+        }
         register("kotlinMultiplatform") {
             id = "sample.convention.kotlin.multiplatform"
             implementationClass = "io.github.mikan.sample.convention.KotlinMultiplatformPlugin"
