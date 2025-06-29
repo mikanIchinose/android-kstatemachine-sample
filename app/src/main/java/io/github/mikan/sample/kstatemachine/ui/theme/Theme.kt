@@ -1,4 +1,4 @@
-package io.github.mikan.sample.ui.theme
+package io.github.mikan.sample.kstatemachine.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
