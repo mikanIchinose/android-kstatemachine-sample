@@ -7,4 +7,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform) apply false
     alias(libs.plugins.androidKotlinMultiplatformLibrary) apply false
     alias(libs.plugins.detekt) apply false
+    alias(libs.plugins.openApiGenerator) apply false
+    alias(libs.plugins.kotlinSerialization) apply false
+    alias(libs.plugins.secretGradlePlugin) apply false
 }

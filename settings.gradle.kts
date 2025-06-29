@@ -22,5 +22,6 @@ dependencyResolutionManagement {
 }
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
-rootProject.name = "Sample"
+rootProject.name = "kstatemachineSample"
 include(":app")
+include(":qiita")
