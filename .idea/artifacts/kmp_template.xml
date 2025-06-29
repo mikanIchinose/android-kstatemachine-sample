@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="kmp-template">
+    <output-path>$PROJECT_DIR$/kmp-template/build/libs</output-path>
+    <root id="archive" name="kmp-template.jar">
+      <element id="module-output" name="Sample.kmp-template.androidMain" />
+    </root>
+  </artifact>
+</component>

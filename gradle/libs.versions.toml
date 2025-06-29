@@ -1,0 +1,72 @@
+[versions]
+targetSdk = "36"
+compileSdk = "36"
+minSdk = "24"
+versionCode = "1"
+versionName = "1.0"
+agp = "8.11.0"
+kotlin = "2.2.0"
+coreKtx = "1.16.0"
+lifecycleRuntimeKtx = "2.9.1"
+activityCompose = "1.10.1"
+composeBom = "2025.06.01"
+androidTools = "31.11.0" # agp + 23.0.0
+androidxLintGradle = "1.0.0-alpha05"
+runner = "1.6.2"
+core = "1.6.1"
+junit = "1.2.1"
+detekt = "1.23.8"
+
+[libraries]
+androidxCoreKtx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidxLifecycleRuntimeKtx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidxActivityCompose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidxComposeBom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidxUi = { group = "androidx.compose.ui", name = "ui" }
+androidxUiGraphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidxUiTooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidxUiToolingPreview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidxUiTestManifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidxMaterial3 = { group = "androidx.compose.material3", name = "material3" }
+detektFormatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
+kotlinStdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+kotlinTest = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
+core = { group = "androidx.test", name = "core", version.ref = "core" }
+junit = { group = "androidx.test.ext", name = "junit", version.ref = "junit" }
+
+# convention plugin
+androidGradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+androidToolsCommon = { group = "com.android.tools", name = "common", version.ref = "androidTools" }
+composeGradlePlugin = { group = "org.jetbrains.kotlin", name = "compose-compiler-gradle-plugin", version.ref = "kotlin" }
+kotlinMultiplatformGradlePlugin = { group = "org.jetbrains.kotlin.multiplatform", name = "org.jetbrains.kotlin.multiplatform.gradle.plugin", version.ref = "kotlin" }
+androidMultiplatformGradlePlugin = { group = "com.android.kotlin.multiplatform.library", name = "com.android.kotlin.multiplatform.library.gradle.plugin", version.ref = "agp" }
+kotlinGradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+androidxLintGradle = { group = "androidx.lint", name = "lint-gradle", version.ref = "androidxLintGradle" }
+detektGradlePlugin = { group = "io.gitlab.arturbosch.detekt", name = "detekt-gradle-plugin", version.ref = "detekt" }
+
+[bundles]
+plugins = [
+    "androidGradlePlugin",
+    "androidToolsCommon",
+    "composeGradlePlugin",
+    "kotlinGradlePlugin",
+    "kotlinMultiplatformGradlePlugin",
+    "androidMultiplatformGradlePlugin",
+    "detektGradlePlugin",
+]
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinCompose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+androidLint = { id = "com.android.lint", version.ref = "agp" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+androidKotlinMultiplatformLibrary = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+
+# convention plugin
+sampleConventionAndroidApplication = { id = "sample.convention.android.application" }
+sampleConventionAndroidLibrary = { id = "sample.convention.android.library" }
+sampleConventionKotlinMultiplatform = { id = "sample.convention.kotlin.multiplatform" }
