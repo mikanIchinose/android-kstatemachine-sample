@@ -25,6 +25,7 @@ kotlinxDateTime = "0.6.2"
 coroutines = "1.10.2"
 composeMarkdown = "0.5.7"
 secretGradlePlugin = "2.0.1"
+koin = "4.1.0"
 
 [libraries]
 androidxCoreKtx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -53,6 +54,11 @@ coilNetworkOkhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", 
 kotlinxDateTime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinxDateTime" }
 coroutinesTest = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
 composeMarkdown = { group = "com.github.jeziellago", name = "compose-markdown", version.ref = "composeMarkdown" }
+koinBom = { module = "io.insert-koin:koin-bom", version.ref = "koin" }
+koinCore = { module = "io.insert-koin:koin-core" }
+koinAndroid = { module = "io.insert-koin:koin-android" }
+koinAndroidxCompose = { module = "io.insert-koin:koin-androidx-compose" }
+koinAndroidxComposeNavigation = { module = "io.insert-koin:koin-androidx-compose-navigation" }
 
 # convention plugin
 androidGradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }

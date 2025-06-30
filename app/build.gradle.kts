@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.sampleConventionAndroidApplication)
     alias(libs.plugins.sampleConventionAndroidCompose)
+    alias(libs.plugins.secretGradlePlugin)
 }
 
 android {
@@ -33,4 +34,9 @@ dependencies {
     implementation(libs.androidxCoreKtx)
     implementation(libs.androidxLifecycleRuntimeKtx)
     implementation(libs.androidxActivityCompose)
+    implementation(platform(libs.koinBom))
+    implementation(libs.koinCore)
+    implementation(libs.koinAndroid)
+    implementation(libs.koinAndroidxCompose)
+    implementation(libs.koinAndroidxComposeNavigation)
 }
